@@ -20,5 +20,7 @@ class Solution:
         str = ''.join(ret)
 
         return str
+    
+#     list to string: ''.join(list)
             
             
