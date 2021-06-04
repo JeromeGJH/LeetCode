@@ -1,3 +1,4 @@
+// 暴力解法
 class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
         List res = new ArrayList();
