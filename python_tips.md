@@ -37,8 +37,10 @@ sort 与 sorted 区别：
 
 - list 的 sort 方法返回的是对已经存在的列表进行操作，而内建函数 sorted 方法返回的是一个新的 list，而不是在原来的基础上进行的操作。  
 
-- sort使用方法为ls.sort()，而`sorted`使用方法为`sorted(ls)`
+- sort使用方法为ls.sort()，而`sorted`使用方法为`sorted(ls)`  
+`sorted(list, key = lamda x: (x[0], -x[1])， reverse)`reverse = True倒序排列。
 
 `sorted(list, key = lamda x: (x[0], -x[1]))` 以列表元素的第一个元素正序，第二个元素倒叙排列。
+
 
 
