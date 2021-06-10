@@ -7,4 +7,4 @@ abc aacd abcd -> aacd abc abcd
 int a = 3
 ```
 
-
+不能用变量来初始化数组，数组在堆中；
