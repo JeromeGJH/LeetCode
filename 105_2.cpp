@@ -8,7 +8,7 @@ public:
         int flag = j;
         while(j < l2){
             flag = j;
-            while( i < l1){
+            while( i < l1 && j < l2){
                 if(source[i] == target[j]){
                 ++j;
                 }
