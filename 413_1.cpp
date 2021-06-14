@@ -37,7 +37,7 @@ public:
             for(k = 1; k <= s-2; ++k){
                 count += k;
             }
-            i = j;
+            i = j;//c此处i+ 2，我是sb
         }
         return count;
 
