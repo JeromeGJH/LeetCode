@@ -8,3 +8,8 @@ int a = 3
 ```
 
 不能用变量来初始化数组，数组在堆中；
+
+二维vector初始化，r行，c列：
+```
+vector<int, vector<int>> dp(r, vector<int>(c, 0));
+```
