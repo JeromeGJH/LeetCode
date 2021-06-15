@@ -11,5 +11,5 @@ int a = 3
 
 二维vector初始化，r行，c列：
 ```
-vector<int, vector<int>> dp(r, vector<int>(c, 0));
+vector<vector<int>> dp(r, vector<int>(c, 0));
 ```
