@@ -13,3 +13,8 @@ int a = 3
 ```
 vector<vector<int>> dp(r, vector<int>(c, 0));
 ```
+sort（）
+标准库里已经有现成的了，就在functional里，include进来就行了。functional提供了一堆基于模板的比较函数对象。它们是（看名字就知道意思了）：equal_to<Type>、not_equal_to<Type>、greater<Type>、greater_equal<Type>、less<Type>、less_equal<Type>。对于这个问题来说，greater和less就足够了，直接拿过来用：
+
+升序：sort(begin,end,less<data-type>());
+降序：sort(begin,end,greater<data-type>()).
