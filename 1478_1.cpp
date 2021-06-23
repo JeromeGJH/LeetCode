@@ -8,20 +8,13 @@ public:
         vector<vector<int>> dp(l , vector<int>(k+1, INT_MAX));
         vector<vector<int>> dis(l , vector<int>(l, 0));
         int i = 0, j = 0, diff = 0, m = 0;
-        int left = 0, right = 0, dist = 0;
         for( i = 0; i < l; ++i){
             dis[i][i] = 0;
             for(j = i+1; j < l; ++j){
                 diff = j - i + 1;
                 // cout << diff<< endl;
-                if(diff % 2 == 1){
-                    dis[i][j] = dis[i][j-1] + houses[j] - houses[i + diff/2];
-                }else{
-                    //cout << "here1 ";
-                    //cout<< houses[j] - houses[i + diff/2 - 1];
-                    dis[i][j] = dis[i][j-1] + houses[j] - houses[i + diff/2 - 1];
+                dis[i][j] = dis[i][j-1] + houses[j] - (diff % 2 == 1? houses[i + diff/2]:houses[i + diff/2 - 1]);
                     //cout << "i: "<<i << " j: "<<j<< " "<<dis[i][j]<<endl;
-                }
                 //cout << "i: "<<i << " j: "<<j<< " "<<dis[i][j]<<endl;
             }
         }
@@ -34,13 +27,6 @@ public:
                 }
             }
         }
-
-
-
-
-
         return dp[l-1][k];
-
-
     }
 };
