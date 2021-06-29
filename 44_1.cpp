@@ -24,9 +24,8 @@ public:
         }
 
         for(i = 1; i < l1; ++i){
-            if(p[0] == '*'){
+            if(p[0] == '*')
                 dp[i][0] = 1;
-            }
         }
 
         for(i = 1; i < l2; ++i){
@@ -34,17 +33,13 @@ public:
                 if(p[i-1] == '*'){
                     dp[0][i] = dp[0][i-1];
                 }
-            }else{
-                dp[0][i] = 0;
             }
         }
 
-        
         for(j = 1; j < l2; ++j){
             if(p[j] == '?'){
-                for(i = 1; i < l1; ++i){
+                for(i = 1; i < l1; ++i)
                     dp[i][j] = dp[i-1][j-1];
-                }
             }else if(p[j] == '*'){
                 flag = 0;
                 for(i = 0; i < l1; ++i){
@@ -53,17 +48,13 @@ public:
                             dp[i][j] = 1;
                             flag = 1;
                         }
-                    }else{
+                    }else
                         dp[i][j] = 1;
-                    }
                 }
             }else{
                 for(i = 1; i < l1; ++i){
-                    if(s[i] == p[j]){
+                    if(s[i] == p[j])
                         dp[i][j] = dp[i-1][j-1];
-                    }else{
-                        dp[i][j] = 0;
-                    }
                 }
             }
         }
@@ -73,7 +64,5 @@ public:
         //     }
         // }
         return dp[l1-1][l2-1] == 1;
-
-
     }
 };
