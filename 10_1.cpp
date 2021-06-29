@@ -34,6 +34,7 @@ public:
                                     break;
                                 }
                             }
+                            i = k-1;
                         }
                     }
                 }
