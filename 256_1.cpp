@@ -28,4 +28,3 @@ public:
         return min(dp[l-1][0], min(dp[l-1][1], dp[l-1][2]));
     }
 };
- 
