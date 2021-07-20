@@ -18,7 +18,6 @@ public:
                 if(j >= i+2 && dp[j] == 0){
                     ans += j - i - 1;
                 }
-
             }
         }
         return ans;
