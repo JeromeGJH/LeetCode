@@ -48,7 +48,5 @@ public:
             }
         }
         return ret;
-
-
     }
 };
