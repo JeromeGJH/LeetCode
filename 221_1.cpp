@@ -23,7 +23,7 @@ public:
             }
         }
         
-        //cout << "here1";
+        //cout << "here1"; 
         for(i = m-2; i >= 0; --i){
             for(j = n-2; j >= 0; --j){
                 if(matrix[i][j] == '0'){
