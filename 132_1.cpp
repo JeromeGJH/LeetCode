@@ -57,12 +57,6 @@ public:
             
         }
 
-        // cout << cut[1][2];
-        // cout << cut[0][0];
-        // cout << cut[0][3];
-        // cout << cut[0][2];
-        // cout << cut[1][3] << endl;
-
         // for(i = 0; i < l; ++i){
         //     for(j = 0; j < l; ++j){
         //         cout << cut[i][j];
