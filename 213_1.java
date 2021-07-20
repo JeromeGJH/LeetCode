@@ -26,7 +26,6 @@ class Solution {
             dp2[i] = Math.max(dp2[i-2] + nums[i], dp2[i-1]);
             max2 = Math.max(max2, dp2[i]);
         }
-
         return Math.max(max1, max2);
     }
 }
