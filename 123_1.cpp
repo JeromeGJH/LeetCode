@@ -24,7 +24,6 @@ public:
             last = cur;
         }
         return res;
-        
 
     }
 };
