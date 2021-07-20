@@ -14,6 +14,5 @@ public:
             T++;
         }
         return T;
-
     }
 };
