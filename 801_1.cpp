@@ -22,4 +22,4 @@ public:
         }
         return min(n2, s2);
     }
-};
+}; 
