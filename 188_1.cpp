@@ -22,6 +22,5 @@ public:
             }
         }
         return sell[k-1];
-
     }
 };
