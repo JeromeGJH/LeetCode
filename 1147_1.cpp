@@ -9,6 +9,7 @@ public:
             if(s.substr(0, i) == s.substr(l-i, i)){
                 flag = 1;
                 ans = max(ans, 2 + ifEqual(s.substr(i, l - i*2), l - i*2));
+                break;
             }
         }
         return flag == 0? 1:ans;
