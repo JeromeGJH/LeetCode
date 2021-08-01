@@ -8,6 +8,6 @@ public:
         if(targetSum== 0 && root->left == nullptr && root->right == nullptr){
             return true;
         }
-        return (hasPathSum(root->left, targetSum) || !hasPathSum(root->right, targetSum));
+        return (hasPathSum(root->left, targetSum) || hasPathSum(root->right, targetSum));
     }
 };
