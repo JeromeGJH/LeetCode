@@ -14,9 +14,9 @@ public:
         int i, j, l, r;
         for(i = 0; i <= len-4; ++i){
             for(j = i+1; j <= len-3; ++j){
-                if(nums[i] + nums[j] + nums[j+1] + nums[j+2] > target){
-                    return res;
-                }
+//                 if(nums[i] + nums[j] + nums[j+1] + nums[j+2] > target){
+//                     return res;
+//                 }
                 t = target - nums[i] - nums[j];
                 l = j + 1;
                 r = len-1;
