@@ -17,7 +17,6 @@ public:
         return n2;
     }
 
-
     ListNode* swapPairs(ListNode* head) {
         if(head == nullptr || head->next == nullptr){
             return head;
