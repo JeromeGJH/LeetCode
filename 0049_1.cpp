@@ -9,7 +9,7 @@ public:
         }
 
         unordered_map<string, vector<int>> word;
-        int i, j;
+        int i, j, k;
         for(i = 0; i< len; ++i){
             string s = "";
             vector<int> count(26, 0);
